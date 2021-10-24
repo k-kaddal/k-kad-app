@@ -1,0 +1,79 @@
+/* Component */
+
+.grid {
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 0rem;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+    /* border-style: solid; */
+    /* border-width: 1px 0px; */
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+    color: turquoise;
+}
+
+/* LEFT */
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+/* RIGHT */
+.right {
+    padding: 1rem;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.image {
+    object-fit: contain;
+    /* min-width: 100px; */
+    max-width: 500px;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    border-style: solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.tags {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+.imageContainer {
+}
+
+.imageContainer > div {
+    position: unset !important;
+}
+
+.card h3 {
+    color: turquoise;
+}
