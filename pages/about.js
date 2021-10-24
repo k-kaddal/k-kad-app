@@ -1,9 +1,14 @@
 import React from 'react'
+import { SubTitle, Title, Paragraph } from '../styles/Fonts.style'
+import artists from '../data/artists'
 
 const about = () => {
     return (
         <div>
-            <h1>About</h1>
+            <Title>About</Title>
+            <SubTitle>Biography</SubTitle>
+            {console.log(artists)}
+            <Paragraph></Paragraph>
         </div>
     )
 }
