@@ -11,7 +11,7 @@ const collection = ({ collection }) => {
             <h2>{collection.year}</h2>
             <p>{collection.tags}</p>
             <br />
-            <Link href="/">Go Back</Link>
+            <Link href="/collections">Go Back</Link>
         </div>
     )
 }

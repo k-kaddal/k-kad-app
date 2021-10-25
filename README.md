@@ -41,10 +41,11 @@ To do:
 -   [x] Create a theme provider (colors and font)
 -   [x] Fix Jsons in Data Folder
 -   [x] Fetch NFT Collections Data
--   [] Add Navigation Bar
+-   [x] Add Navigation Bar
+-   [x] Add Collections Page
+-   [] Adjust buttons of collectionItem when responsice
 -   Add About page
 -   Add Projects Page
--   Add Collections Page
 -   Implement page transitions with Framer Motion
 -   Add project details page
 -   Add Collection details page

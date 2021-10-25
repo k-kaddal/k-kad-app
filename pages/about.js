@@ -1,15 +1,14 @@
 import React from 'react'
 import { SubTitle, Title, Paragraph } from '../styles/Fonts.style'
-import artists from '../data/artists'
+import { Grid } from '../styles/Section.style'
 
 const about = () => {
     return (
-        <div>
+        <Grid>
             <Title>About</Title>
             <SubTitle>Biography</SubTitle>
-            {console.log(artists)}
             <Paragraph></Paragraph>
-        </div>
+        </Grid>
     )
 }
 

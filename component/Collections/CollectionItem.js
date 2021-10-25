@@ -2,6 +2,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import collectionStyles from '../../styles/Collection.module.css'
 import React, { useState, useEffect } from 'react'
+import { Card, Left, Right, Button } from '../../styles/Section.style'
+import { Title, SubTitle, Paragraph, Tag } from '../../styles/Fonts.style'
+import { withTheme } from 'styled-components'
+import theme from '../../styles/theme'
 
 const CollectionItem = ({ collection }) => {
     const basePath = '/images'
@@ -26,35 +30,26 @@ const CollectionItem = ({ collection }) => {
     }, [currentIndex])
 
     return (
-        <Link href="/collection/[id]" as={`/collection/${collection.id}`}>
-            <a className={collectionStyles.card}>
-                {/* Left Card */}
-                <div className={collectionStyles.left}>
-                    <div className={collectionStyles.imageContainer}>
-                        {console.log('current index', currentIndex)}
-                        <img
-                            alt={`${collection.imageAlt}`}
-                            src={`${basePath}/${images[currentIndex]}`}
-                            className={collectionStyles.image}
-                        />
-                    </div>
-                </div>
-
-                {/* Right Card */}
-                <div className={collectionStyles.right}>
-                    <h3>{collection.title.toUpperCase()}</h3>
-                    <h5>{pieces} Pieces</h5>
-                    <h5>Editions of {editions}</h5>
-                    <h5>{collection.year}</h5>
-                    {/* {collection.tags.map(tag=>
-					<div className={collectionStyles.tags}>
-					<h5>#{tag}&nbsp;</h5>
-					</div>
-				)} */}
-                </div>
-            </a>
-        </Link>
+        <Card>
+            <Left>
+                <img
+                    alt={`${collection.imageAlt}`}
+                    src={`${basePath}/${images[currentIndex]}`}
+                />
+            </Left>
+            <Right>
+                <Tag fontWeight="normal">
+                    {pieces} Artworks, Editions of {editions}
+                </Tag>
+                <Title>| {collection.title.toUpperCase()} </Title>
+                <Tag color={theme.colors.accent} fontWeight="normal">
+                    | {collection.year}
+                </Tag>
+                <Button>FIND ON OPENSEA</Button>
+                <Button>DETAILS</Button>
+            </Right>
+        </Card>
     )
 }
 
-export default CollectionItem
+export default withTheme(CollectionItem)

@@ -1,5 +1,6 @@
 export const projects = [
     {
+        id: '1',
         title: 'The Formula of Giving a Heart',
         venues: '',
         year: 2020,
@@ -8,6 +9,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '2',
         title: 'To The Nostrils of Time',
         venue: '',
         year: 2020,
@@ -16,6 +18,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '3',
         title: 'ABJD',
         venue: '',
         year: 2020,
@@ -24,6 +27,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '4',
         title: 'Boudaries of Multiverse',
         venue: '',
         year: 2020,
@@ -32,6 +36,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '5',
         title: 'Rapturous Inspirartions',
         venue: '',
         year: 2020,
@@ -40,6 +45,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '6',
         title: 'Essence of Disappearance',
         venue: '',
         year: 2020,
@@ -48,6 +54,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '7',
         title: 'The Sky is High, but not for everyone',
         venue: '',
         year: 2020,
@@ -56,6 +63,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '8',
         title: 'Code-03',
         venue: '',
         year: 2020,
@@ -64,6 +72,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '9',
         title: 'Code-20',
         venue: '',
         year: 2020,
@@ -72,6 +81,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '10',
         title: 'Trapped Sounds',
         venue: '',
         year: 2020,
@@ -80,6 +90,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '11',
         title: 'Fungal Blooms',
         venue: '',
         year: 2020,
@@ -88,6 +99,8 @@ export const projects = [
         description: '',
     },
     {
+        id: '12',
+
         title: 'Hole.Some',
         venue: '',
         year: 2020,
@@ -96,6 +109,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '13',
         title: 'Rise Like Nefertem',
         venue: '',
         year: 2020,
@@ -104,6 +118,7 @@ export const projects = [
         description: '',
     },
     {
+        id: '14',
         title: 'Stated Else-where',
         venue: '',
         year: 2020,
