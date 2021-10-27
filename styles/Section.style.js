@@ -5,7 +5,7 @@ export const Page = styled.div`
     flex-direction: column; */
     padding: 1rem;
     width: 100%;
-    border: thin solid red;
+    /* border: thin solid red; */
 `
 
 export const Grid = styled.div`
@@ -57,7 +57,6 @@ export const Left = styled.div`
 
     &:hover {
         border: thin solid ${({ theme }) => theme.colors.accent};
-        /* border-right: 0; */
         box-shadow: 0px 0px 7px 0.5px ${({ theme }) => theme.colors.minor};
     }
 `

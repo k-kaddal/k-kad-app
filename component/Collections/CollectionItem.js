@@ -42,10 +42,10 @@ const CollectionItem = ({ collection }) => {
                 <Tag color={theme.colors.accent} fontWeight="normal">
                     | {collection.year}
                 </Tag>
+                <br />
                 <Tag fontWeight="100">
                     {pieces} Artworks, Editions of {editions}
                 </Tag>
-
                 <Tag fontWeight="100">#{collection.tags.join(', #')}</Tag>
 
                 <Link href={collection.marketplace}>
