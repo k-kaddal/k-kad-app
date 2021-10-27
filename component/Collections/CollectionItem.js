@@ -1,11 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import collectionStyles from '../../styles/Collection.module.css'
 import React, { useState, useEffect } from 'react'
 import { Card, Left, Right, Button } from '../../styles/Section.style'
 import { Title, SubTitle, Paragraph, Tag } from '../../styles/Fonts.style'
-import { withTheme } from 'styled-components'
-import theme from '../../styles/theme'
+import theme from '../../styles/Theme'
 
 const CollectionItem = ({ collection }) => {
     const basePath = '/images'
@@ -24,32 +21,47 @@ const CollectionItem = ({ collection }) => {
             } else {
                 setCurrentIndex(currentIndex + 1)
             }
-        }, 10000 / images.length)
+        }, 15000 / images.length)
 
         return () => clearInterval(intervalId)
     }, [currentIndex])
 
     return (
         <Card>
-            <Left>
-                <img
-                    alt={`${collection.imageAlt}`}
-                    src={`${basePath}/${images[currentIndex]}`}
-                />
-            </Left>
+            <Link href="/collection/[id]" as={`/collection/${collection.id}`}>
+                <Left>
+                    <img
+                        alt={`${collection.imageAlt}`}
+                        src={`${basePath}/${images[currentIndex]}`}
+                    />
+                </Left>
+            </Link>
+
             <Right>
-                <Tag fontWeight="normal">
-                    {pieces} Artworks, Editions of {editions}
-                </Tag>
                 <Title>| {collection.title.toUpperCase()} </Title>
                 <Tag color={theme.colors.accent} fontWeight="normal">
                     | {collection.year}
                 </Tag>
-                <Button>FIND ON OPENSEA</Button>
-                <Button>DETAILS</Button>
+                <Tag fontWeight="100">
+                    {pieces} Artworks, Editions of {editions}
+                </Tag>
+
+                <Tag fontWeight="100">#{collection.tags.join(', #')}</Tag>
+
+                <Link href={collection.marketplace}>
+                    <a target="_blank" rel="noreferrer">
+                        <Button>FIND ON OPENSEA</Button>
+                    </a>
+                </Link>
+                <Link
+                    href="/collection/[id]"
+                    as={`/collection/${collection.id}`}
+                >
+                    <Button>DETAILS</Button>
+                </Link>
             </Right>
         </Card>
     )
 }
 
-export default withTheme(CollectionItem)
+export default CollectionItem

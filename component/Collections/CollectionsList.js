@@ -1,13 +1,13 @@
 import CollectionItem from './CollectionItem'
-import { Grid } from '../../styles/Section.style'
+import { Page } from '../../styles/Section.style'
 
 const CollectionList = ({ collections }) => {
     return (
-        <Grid>
+        <Page>
             {collections.map(collection => (
                 <CollectionItem key={collection.id} collection={collection} />
             ))}
-        </Grid>
+        </Page>
     )
 }
 

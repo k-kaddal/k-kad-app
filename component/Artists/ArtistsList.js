@@ -1,5 +1,4 @@
 import ArtistItem from './ArtistItem'
-import artistStyles from '../../styles/Artist.module.css'
 
 const ArtistList = ({ artists }) => {
     return (

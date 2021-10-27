@@ -1,6 +1,6 @@
 import Navbar from './Navbar'
 import Meta from './Meta'
-import theme from '../styles/theme'
+import theme from '../styles/Theme'
 import { GlobalStyle, Main, Left, Right } from '../styles/Global.style'
 import { ThemeProvider } from 'styled-components'
 

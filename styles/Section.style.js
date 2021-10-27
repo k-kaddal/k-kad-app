@@ -1,14 +1,44 @@
 import styled from 'styled-components'
 
-export const Grid = styled.section`
-    width: 100%;
-    /* border: thin solid red; */
+export const Page = styled.div`
+    /* display: flex;
+    flex-direction: column; */
     padding: 1rem;
+    width: 100%;
+    border: thin solid red;
+`
+
+export const Grid = styled.div`
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1rem 1rem;
+
+    margin: 1rem;
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+`
+
+export const About = styled.div`
+    margin: 1rem;
+    padding: 1rem 10rem;
+    border-bottom: thin solid ${({ theme }) => theme.colors.accent_soft};
+    box-shadow: 0px 0px 7px 0.5px ${({ theme }) => theme.colors.minor};
+
+    &:hover {
+        border-bottom: thin solid ${({ theme }) => theme.colors.accent};
+        box-shadow: 0px 2px 7px 0.5px ${({ theme }) => theme.colors.minor};
+    }
 `
 
 export const Card = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 2rem 0rem;
 `
 
@@ -21,7 +51,7 @@ export const Left = styled.div`
 
     img {
         object-fit: contain;
-        max-width: 50vw;
+        max-width: 35vw;
         padding: 0.5rem;
     }
 
@@ -35,7 +65,7 @@ export const Left = styled.div`
 export const Right = styled.div`
     padding-left: 1rem;
     text-align: start;
-    width: 50vw;
+    width: 35vw;
     height: 100%;
     border: thin solid ${({ theme }) => theme.colors.accent_soft};
     border-left: 0;
@@ -44,7 +74,6 @@ export const Right = styled.div`
 
     &:hover {
         border: thin solid ${({ theme }) => theme.colors.accent};
-        /* border-left: 0; */
         box-shadow: 0px 0px 7px 0.5px ${({ theme }) => theme.colors.minor};
     }
 `
@@ -63,5 +92,9 @@ export const Button = styled.button`
     &:hover {
         border: thin solid ${({ theme }) => theme.colors.accent};
         box-shadow: 0px 0px 7px 0.5px ${({ theme }) => theme.colors.minor};
+        background-color: ${({ theme }) =>
+            theme.colors.rnd[
+                Math.floor(Math.random() * theme.colors.rnd.length)
+            ]};
     }
 `

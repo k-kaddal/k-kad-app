@@ -1,18 +1,43 @@
 import React from 'react'
 import Link from 'next/link'
 import { server } from '../../../config'
-import collectionStyles from '../../../styles/Collection.module.css'
+import { Page, About } from '../../../styles/Section.style'
+import ArtworkList from '../../../component/Collections/ArtworkList'
+import { Tag, Title, Paragraph } from '../../../styles/Fonts.style'
+import theme from '../../../styles/Theme'
+import { Button } from '../../../styles/Section.style'
 
 const collection = ({ collection }) => {
+    const pieces = collection.artworks.length
+    const editions = collection.artworks
+        .map(artwork => artwork.edition)
+        .reduce((a, b) => a + b + 0)
+
     return (
-        <div className={collectionStyles.page}>
-            <h1>{collection.title}</h1>
-            <h2>{collection.description}</h2>
-            <h2>{collection.year}</h2>
-            <p>{collection.tags}</p>
-            <br />
-            <Link href="/collections">Go Back</Link>
-        </div>
+        <Page>
+            <About>
+                <Title>{collection.title.toUpperCase()} </Title>
+                <Tag color={theme.colors.accent} fontWeight="normal">
+                    {collection.year}
+                </Tag>
+                <Tag fontWeight="100">
+                    {pieces} Artworks, Editions of {editions}
+                </Tag>
+
+                <Paragraph fontWeight="lighter">
+                    {collection.description}
+                </Paragraph>
+                <Tag fontWeight="100" color={theme.colors.accent}>
+                    #{collection.tags.join(', #')}
+                </Tag>
+                <Link href={collection.marketplace}>
+                    <a target="_blank" rel="noreferrer">
+                        <Button>FIND ON OPENSEA</Button>
+                    </a>
+                </Link>
+            </About>
+            <ArtworkList collection={collection} />
+        </Page>
     )
 }
 

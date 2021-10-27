@@ -1,11 +1,12 @@
 import { server } from '../config'
 import ProjectsList from '../component/Projects/ProjectsList'
+import { Page } from '../styles/Section.style'
 
 export default function Projects({ projects }) {
     return (
-        <>
+        <Page>
             <ProjectsList projects={projects} />
-        </>
+        </Page>
     )
 }
 

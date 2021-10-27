@@ -8,6 +8,10 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing:border-box;
         transition: all 0.75s ease;
         border-radius: 4px;
+
+        a{
+            text-decoration: none;
+        }
     }
 
     body {

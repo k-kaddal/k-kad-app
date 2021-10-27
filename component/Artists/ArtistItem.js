@@ -1,7 +1,6 @@
 // artist
 
 import Link from 'next/link'
-import artistStyles from '../../styles/Artist.module.css'
 
 const ArtistItem = ({ artist }) => {
     return (

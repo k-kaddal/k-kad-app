@@ -1,5 +1,5 @@
 import ProjectItem from './ProjectItem'
-import { Grid } from '../../styles/Section.style'
+import { Grid, Page } from '../../styles/Section.style'
 
 const ProjectsList = ({ projects }) => {
     return (
