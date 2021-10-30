@@ -5,7 +5,15 @@ export const artists = [
         Selected Exhibitions and performances at Overgaden Institut for Samtidskunst, Copenhagen; Sharjah Art Foundation, Sharjah; Mosaic Rooms Gallery, London; Tokyo Metropolitan ArtMuseum, Tokyo; Science Gallery, London; Palazzo Mora Venice Biennale; TownHouse Gallery, Cairo; Cairotronica Symposium, Valletta 2018 European Capital of Culture; Cairo; Zentrum der Kunster Hellerau, Dresden; and Dilston Grove Gallery, London; 5th Biennale Internationale de Casablanca, Morocco. Visiting Fellow at the University of Oxford. \n
         Kaddal studied Computer Science at AAST (EG), and Sound Art at the University of the Arts London (UK). He is currently Resident Fellow at Uniarts Helsinki, Finland.`,
         image: 'khaledkaddal.jpeg',
-        email: 'khaledkaddal@gmail.com',
+        links: {
+            email: 'khaledkaddal@gmail.com',
+            twitter: 'https://twitter.com/KhaledKaddal',
+            facebook: 'https://www.facebook.com/khaled.kaddal/',
+            github: 'https://www.github.com/k-kaddal/',
+            instagram: 'https://www.instagram.com/khaledkaddal/',
+            vimeo: 'https://vimeo.com/khaledkaddal',
+            linkedin: 'https://vimeo.com/khaledkaddal',
+        },
         events: [
             {
                 year: '2021',

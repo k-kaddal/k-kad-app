@@ -1,10 +1,12 @@
 import ProjectItem from './ProjectItem'
-import { Grid, Page } from '../../styles/Section.style'
+import { Page, Grid } from '../../styles/Section.style'
 
 const ProjectsList = ({ projects }) => {
     return (
         <Grid>
-            <h1>PROJECTS</h1>
+            {projects.map((project, key) => (
+                <ProjectItem key={key} project={project} />
+            ))}
         </Grid>
     )
 }

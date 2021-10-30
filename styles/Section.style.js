@@ -15,7 +15,7 @@ export const Grid = styled.div`
     grid-gap: 1rem 1rem;
 
     margin: 1rem;
-    @media (max-width: 900px) {
+    @media (max-width: 1150px) {
         grid-template-columns: repeat(2, 1fr);
     }
     @media (max-width: 600px) {
@@ -26,12 +26,12 @@ export const Grid = styled.div`
 export const About = styled.div`
     margin: 1rem;
     padding: 1rem 10rem;
-    border-bottom: thin solid ${({ theme }) => theme.colors.accent_soft};
-    box-shadow: 0px 0px 7px 0.5px ${({ theme }) => theme.colors.minor};
+    border: thin solid ${({ theme }) => theme.colors.accent_soft};
+    box-shadow: 0px 0px 1px 0.5px ${({ theme }) => theme.colors.minor};
 
     &:hover {
-        border-bottom: thin solid ${({ theme }) => theme.colors.accent};
-        box-shadow: 0px 2px 7px 0.5px ${({ theme }) => theme.colors.minor};
+        border: thin solid ${({ theme }) => theme.colors.accent};
+        box-shadow: 0px 0px 7px 0.5px ${({ theme }) => theme.colors.minor};
     }
 `
 

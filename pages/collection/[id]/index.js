@@ -13,6 +13,8 @@ const collection = ({ collection }) => {
         .map(artwork => artwork.edition)
         .reduce((a, b) => a + b + 0)
 
+    var description = collection.description.split('\n')
+
     return (
         <Page>
             <About>
@@ -24,9 +26,14 @@ const collection = ({ collection }) => {
                     {pieces} Artworks, Editions of {editions}
                 </Tag>
 
-                <Paragraph fontWeight="lighter">
-                    {collection.description}
-                </Paragraph>
+                {description.map((line, key) => {
+                    return (
+                        <Paragraph key={key} fontWeight="lighter">
+                            {line}
+                        </Paragraph>
+                    )
+                })}
+
                 <Tag fontWeight="100" color={theme.colors.accent}>
                     #{collection.tags.join(', #')}
                 </Tag>
