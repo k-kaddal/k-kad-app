@@ -7,8 +7,10 @@ import Link from 'next/link'
 const ArtworkItem = ({ id, artwork, collectionName, marketplace }) => {
     const basePath = '/images'
 
+    const market = marketplace.link
+
     return (
-        <Link href={marketplace}>
+        <Link href={market}>
             <a target="_blank" rel="noreferrer">
                 <Card>
                     <img src={`${basePath}/${artwork.imageUrl}`} />
@@ -17,9 +19,9 @@ const ArtworkItem = ({ id, artwork, collectionName, marketplace }) => {
                             {collectionName.toUpperCase()} # {id + 1}
                         </Tag>
                         <Tag fontWeight="lighter">
-                            Edition : {artwork.edition}
+                            Edition: {artwork.edition}
                         </Tag>
-                        <Tag fontWeight="lighter">Price : £{artwork.price}</Tag>
+                        <Tag fontWeight="lighter">Price: Ξ {artwork.price}</Tag>
                     </div>
                 </Card>
             </a>

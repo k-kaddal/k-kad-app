@@ -9,17 +9,29 @@ const ProjectItem = ({ project }) => {
     const basePath = '/images'
     const image = project.gallery[0]
 
-    return (
-        <Card>
-            <img alt={`${project.imageAlt}`} src={`${basePath}/${image}`} />
+    const [isShown, setIsShown] = useState(false)
 
-            <div hidden>
-                <SubTitle color={theme.colors.accent}>
-                    {project.title.toUpperCase()}
-                </SubTitle>
-                <Tag>{project.year}</Tag>
-            </div>
-        </Card>
+    return (
+        <Link href="/project/[id]" as={`/project/${project.id}`}>
+            <Card
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}
+            >
+                <img alt={`${project.imageAlt}`} src={`${basePath}/${image}`} />
+
+                {isShown ? (
+                    <About>
+                        <SubTitle color={theme.colors.accent}>
+                            {project.title.toUpperCase()}
+                        </SubTitle>
+                        <Tag fontWeight="100" color={theme.colors.accent}>
+                            {project.year}
+                        </Tag>
+                        <Tag fontWeight="100">#{project.tags.join(', #')}</Tag>{' '}
+                    </About>
+                ) : null}
+            </Card>
+        </Link>
     )
 }
 
@@ -27,12 +39,13 @@ export default ProjectItem
 
 const Card = styled.div`
     display: flex;
+    flex-direction: column;
     width: 20rem;
     height: 20rem;
     border: thin solid ${({ theme }) => theme.colors.accent_soft};
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
-    /* margin: 2rem; */
+    opacity: 100%;
 
     img {
         object-fit: contain;
@@ -43,4 +56,17 @@ const Card = styled.div`
         border: thin solid ${({ theme }) => theme.colors.accent};
         box-shadow: 0px 0px 7px 0.5px ${({ theme }) => theme.colors.minor};
     }
+`
+
+const About = styled.div`
+    background: ${({ theme }) => theme.colors.major};
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-content: center;
+    width: 20rem;
+    height: 20rem;
+    opacity: 90%;
 `

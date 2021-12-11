@@ -20,7 +20,7 @@ const Navbar = () => {
                     <span />
                 </Hamburger>
                 <Link href="/">
-                    <Logo>K.KADDAL</Logo>
+                    <Logo>K-KADDAL</Logo>
                 </Link>
             </div>
             <Menu isOpen={isOpen}>

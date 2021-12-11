@@ -13,7 +13,7 @@ export const collections = [
                 price: 1000,
             },
         ],
-        marketplace: 'https://opensea.io',
+        marketplace: { market: 'opensea', link: 'https://opensea.io' },
     },
     {
         id: '2',
@@ -49,7 +49,7 @@ export const collections = [
                 price: 1000,
             },
         ],
-        marketplace: 'https://opensea.io',
+        marketplace: { market: 'opensea', link: 'https://opensea.io' },
     },
     {
         id: '3',
@@ -100,6 +100,5 @@ export const collections = [
                 price: 1000,
             },
         ],
-        marketplace: 'https://opensea.io',
     },
 ]

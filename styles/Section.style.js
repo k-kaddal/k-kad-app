@@ -25,7 +25,7 @@ export const Grid = styled.div`
 
 export const About = styled.div`
     margin: 1rem;
-    padding: 1rem 10rem;
+    padding: 1rem 2rem;
     border: thin solid ${({ theme }) => theme.colors.accent_soft};
     box-shadow: 0px 0px 1px 0.5px ${({ theme }) => theme.colors.minor};
 

@@ -13,6 +13,8 @@ const collection = ({ collection }) => {
         .map(artwork => artwork.edition)
         .reduce((a, b) => a + b + 0)
 
+    const market = collection.marketplace
+
     var description = collection.description.split('\n')
 
     return (
@@ -37,9 +39,9 @@ const collection = ({ collection }) => {
                 <Tag fontWeight="100" color={theme.colors.accent}>
                     #{collection.tags.join(', #')}
                 </Tag>
-                <Link href={collection.marketplace}>
+                <Link href={market.link}>
                     <a target="_blank" rel="noreferrer">
-                        <Button>FIND ON OPENSEA</Button>
+                        <Button>FIND ON {market.market.toUpperCase()}</Button>
                     </a>
                 </Link>
             </About>

@@ -12,6 +12,8 @@ const CollectionItem = ({ collection }) => {
         .reduce((a, b) => a + b + 0)
     const images = collection.artworks.map(artwork => artwork.imageUrl)
 
+    const market = collection.marketplace
+
     const [currentIndex, setCurrentIndex] = useState(0)
 
     useEffect(() => {
@@ -48,17 +50,26 @@ const CollectionItem = ({ collection }) => {
                 </Tag>
                 <Tag fontWeight="100">#{collection.tags.join(', #')}</Tag>
 
-                <Link href={collection.marketplace}>
-                    <a target="_blank" rel="noreferrer">
-                        <Button>FIND ON OPENSEA</Button>
-                    </a>
-                </Link>
-                <Link
-                    href="/collection/[id]"
-                    as={`/collection/${collection.id}`}
-                >
-                    <Button>DETAILS</Button>
-                </Link>
+                {market ? (
+                    <div>
+                        <Link href={market.link}>
+                            <a target="_blank" rel="noreferrer">
+                                <Button>
+                                    FIND ON {market.market.toUpperCase()}
+                                </Button>
+                            </a>
+                        </Link>
+
+                        <Link
+                            href="/collection/[id]"
+                            as={`/collection/${collection.id}`}
+                        >
+                            <Button>DETAILS</Button>
+                        </Link>
+                    </div>
+                ) : (
+                    <Button>COMING SOON!</Button>
+                )}
             </Right>
         </Card>
     )
