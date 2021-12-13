@@ -42,7 +42,7 @@ const collection = ({ collection }) => {
 
                 <Link href={market.link}>
                     <a target="_blank" rel="noreferrer">
-                        <Button>FIND ON {market.market.toUpperCase()}</Button>
+                        <Button>FIND ON {market.name.toUpperCase()}</Button>
                     </a>
                 </Link>
             </About>
@@ -59,7 +59,7 @@ export const getStaticProps = async context => {
 
     return {
         props: { collection },
-        unstable_revalidate: 1,
+        // unstable_revalidate: 1,
     }
 }
 
@@ -68,11 +68,11 @@ export const getStaticPaths = async () => {
     const res = await fetch(`${server}/api/collections`)
     const collections = await res.json()
     const ids = collections.map(a => a.id)
-    const paths = ids.map(id => ({ params: { id: id.toString() } }))
+    const paths = ids.map(id => ({ params: { id: '' + id } }))
 
     return {
         paths,
-        fallback: true,
+        fallback: false,
     }
 }
 

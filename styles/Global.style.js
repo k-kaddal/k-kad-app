@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
-    @import url(${({ theme }) => theme.fontUrl});
+    /* @import url(${({ theme }) => theme.fontUrl}); */
 
 
     * {

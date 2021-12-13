@@ -43,12 +43,12 @@ To do:
 -   [x] Fetch NFT Collections Data
 -   [x] Add Navigation Bar
 -   [x] Add Collections Page
--   [] Adjust buttons of collectionItem when responsice
--   Add About page
--   Add Projects Page
--   Implement page transitions with Framer Motion
--   Add project details page
--   Add Collection details page
+-   [x] Adjust buttons of collectionItem when responsice
+-   [x] Add About page
+-   [x] Add Projects Page
+-   [x] Implement page transitions with Framer Motion
+-   [x] Add project details page
+-   [x] Add Collection details page
 -   Deploy
 
 ## Contact

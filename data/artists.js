@@ -1,5 +1,6 @@
 export const artists = [
     {
+        id: '1',
         name: 'Khaled Kaddal',
         biography: `Khaled Kaddal is an interdisciplinary artist and tech-developer, raised in Egypt and currently resident in London. His hybrid practice includes computational and generative media, sound performances and spatial installations. Finding inspitations from mythical motifs, his latest works contemplate human communication, politics of cybernetics and meta-borders.\n
         Selected Exhibitions and performances at Overgaden Institut for Samtidskunst, Copenhagen; Sharjah Art Foundation, Sharjah; Mosaic Rooms Gallery, London; Tokyo Metropolitan ArtMuseum, Tokyo; Science Gallery, London; Palazzo Mora Venice Biennale; TownHouse Gallery, Cairo; Cairotronica Symposium, Valletta 2018 European Capital of Culture; Cairo; Zentrum der Kunster Hellerau, Dresden; and Dilston Grove Gallery, London; 5th Biennale Internationale de Casablanca, Morocco. Visiting Fellow at the University of Oxford. \n

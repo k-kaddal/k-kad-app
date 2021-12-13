@@ -2,12 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import { server } from '../../../config'
 import { Page, About } from '../../../styles/Section.style'
-import ArtworkList from '../../../component/Collections/ArtworkList'
 import { Tag, Title, Paragraph } from '../../../styles/Fonts.style'
 import theme from '../../../styles/Theme'
-import { Button } from '../../../styles/Section.style'
 import ReactPlayer from 'react-player'
-import styled from 'styled-components'
 
 const project = ({ project }) => {
     var description = project.description.split('\n')
@@ -53,7 +50,7 @@ export const getStaticProps = async context => {
 
     return {
         props: { project },
-        unstable_revalidate: 1,
+        // unstable_revalidate: 1,
     }
 }
 
@@ -62,11 +59,11 @@ export const getStaticPaths = async () => {
     const res = await fetch(`${server}/api/projects`)
     const projects = await res.json()
     const ids = projects.map(a => a.id)
-    const paths = ids.map(id => ({ params: { id: id.toString() } }))
+    const paths = ids.map(id => ({ params: { id: '' + id } }))
 
     return {
         paths,
-        fallback: true,
+        fallback: false,
     }
 }
 

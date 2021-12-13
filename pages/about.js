@@ -57,6 +57,7 @@ const About = ({ artists }) => {
                         {exhibitions.map((event, key) => {
                             return (
                                 <div
+                                    key={key}
                                     style={{
                                         display: 'flex',
                                         flexDirection: 'row',
@@ -89,6 +90,7 @@ const About = ({ artists }) => {
                         {performances.map((event, key) => {
                             return (
                                 <div
+                                    key={key}
                                     style={{
                                         display: 'flex',
                                         flexDirection: 'row',
@@ -121,6 +123,7 @@ const About = ({ artists }) => {
                         {conferences.map((event, key) => {
                             return (
                                 <div
+                                    key={key}
                                     style={{
                                         display: 'flex',
                                         flexDirection: 'row',
@@ -151,6 +154,7 @@ const About = ({ artists }) => {
                         {press.map((event, key) => {
                             return (
                                 <div
+                                    key={key}
                                     style={{
                                         display: 'flex',
                                         flexDirection: 'row',
@@ -261,7 +265,7 @@ export const getStaticProps = async () => {
         props: {
             artists,
         },
-        unstable_revalidate: 1,
+        // unstable_revalidate: 1,
     }
 }
 

@@ -14,7 +14,7 @@ export const getStaticProps = async context => {
 
     return {
         props: { studio },
-        unstable_revalidate: 1,
+        // unstable_revalidate: 1,
     }
 }
 
@@ -23,11 +23,11 @@ export const getStaticPaths = async () => {
     const res = await fetch(`${server}/api/studios`)
     const studios = await res.json()
     const ids = studios.map(a => a.id)
-    const paths = ids.map(id => ({ params: { id: id.toString() } }))
+    const paths = ids.map(id => ({ params: { id: '' + id } }))
 
     return {
         paths,
-        fallback: true,
+        fallback: false,
     }
 }
 

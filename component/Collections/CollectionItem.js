@@ -50,12 +50,12 @@ const CollectionItem = ({ collection }) => {
                 </Tag>
                 <Tag fontWeight="100">#{collection.tags.join(', #')}</Tag>
 
-                {market ? (
+                {market.listed ? (
                     <div>
                         <Link href={market.link}>
                             <a target="_blank" rel="noreferrer">
                                 <Button>
-                                    FIND ON {market.market.toUpperCase()}
+                                    FIND ON {market.name.toUpperCase()}
                                 </Button>
                             </a>
                         </Link>

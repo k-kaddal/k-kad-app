@@ -19,6 +19,6 @@ export const getStaticProps = async () => {
         props: {
             collections,
         },
-        unstable_revalidate: 1,
+        // unstable_revalidate: 1,
     }
 }

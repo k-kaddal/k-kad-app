@@ -46,7 +46,7 @@ export const getStaticProps = async () => {
         props: {
             studios,
         },
-        unstable_revalidate: 1,
+        // unstable_revalidate: 1,
     }
 }
 
