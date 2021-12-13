@@ -39,6 +39,7 @@ const collection = ({ collection }) => {
                 <Tag fontWeight="100" color={theme.colors.accent}>
                     #{collection.tags.join(', #')}
                 </Tag>
+
                 <Link href={market.link}>
                     <a target="_blank" rel="noreferrer">
                         <Button>FIND ON {market.market.toUpperCase()}</Button>
@@ -58,6 +59,7 @@ export const getStaticProps = async context => {
 
     return {
         props: { collection },
+        unstable_revalidate: 1,
     }
 }
 
@@ -70,7 +72,7 @@ export const getStaticPaths = async () => {
 
     return {
         paths,
-        fallback: false,
+        fallback: true,
     }
 }
 

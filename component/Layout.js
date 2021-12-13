@@ -4,7 +4,10 @@ import theme from '../styles/Theme'
 import { GlobalStyle, Main, Left, Right } from '../styles/Global.style'
 import { ThemeProvider } from 'styled-components'
 
+import { artists } from '../data/artists'
+
 const Layout = ({ children }) => {
+    // console.log(artists)
     return (
         <ThemeProvider theme={theme}>
             <>

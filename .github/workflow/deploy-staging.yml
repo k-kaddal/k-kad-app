@@ -1,0 +1,25 @@
+name: Deployment Cloud Run Staging
+
+on:
+    push:
+        branches:
+            - staging
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v1
+
+            - name: Build docker image
+              run: docker build -t gcr.io/full-human-com/strapidemo-staging .
+
+            - name: Cloud Run
+              uses: alfredosalzillo/action-cloud-run@v1.0
+              with:
+                  image: gcr.io/full-human-com/strapidemo-staging
+                  service: strapidemo-staging
+                  project: full-human-com
+                  region: europe-west1
+                  service key: ${{ secrets.GCLOUD_AUTH }}

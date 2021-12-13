@@ -53,6 +53,7 @@ export const getStaticProps = async context => {
 
     return {
         props: { project },
+        unstable_revalidate: 1,
     }
 }
 
@@ -65,7 +66,7 @@ export const getStaticPaths = async () => {
 
     return {
         paths,
-        fallback: false,
+        fallback: true,
     }
 }
 

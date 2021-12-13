@@ -261,6 +261,7 @@ export const getStaticProps = async () => {
         props: {
             artists,
         },
+        unstable_revalidate: 1,
     }
 }
 

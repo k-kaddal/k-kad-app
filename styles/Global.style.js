@@ -21,6 +21,23 @@ export const GlobalStyle = createGlobalStyle`
         letter-spacing: 0.1rem;
         margin: 0;
     }
+
+    ::-webkit-scrollbar{
+        width:5px;
+    }
+
+    ::-webkit-scrollbar-track{
+        background: ${({ theme }) => theme.colors.major};
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: ${({ theme }) => theme.colors.accent_soft};
+        border-radius:25px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        background: ${({ theme }) => theme.colors.accent};
+    }
 `
 
 export const Main = styled.div`

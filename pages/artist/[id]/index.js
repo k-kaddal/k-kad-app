@@ -1,11 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import { server } from '../../../config'
-import artistStyles from '../../../styles/Artist.module.css'
 
 const artist = ({ artist }) => {
     return (
-        <div className={artistStyles.page}>
+        <div>
             <h1>{artist.name}</h1>
             <h2>{artist.biography}</h2>
             <br />
@@ -22,6 +21,7 @@ export const getStaticProps = async context => {
 
     return {
         props: { artist },
+        unstable_revalidate: 1,
     }
 }
 
@@ -34,7 +34,7 @@ export const getStaticPaths = async () => {
 
     return {
         paths,
-        fallback: false,
+        fallback: true,
     }
 }
 
