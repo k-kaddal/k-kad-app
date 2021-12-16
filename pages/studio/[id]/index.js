@@ -37,3 +37,5 @@ export const getStaticPaths = async () => {
         fallback: false,
     }
 }
+
+export default studio
