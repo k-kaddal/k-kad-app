@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { server } from '../../../config'
+import projects from '../../../data/projects.json'
 import { Page, About } from '../../../styles/Section.style'
 import { Tag, Title, Paragraph } from '../../../styles/Fonts.style'
 import theme from '../../../styles/Theme'
@@ -44,9 +45,11 @@ const project = ({ project }) => {
 
 // FETCH DATA
 // 1] STATIC
-export const getStaticProps = async context => {
-    const res = await fetch(`${server}/api/projects/${context.params.id}`)
-    const project = await res.json()
+export const getStaticProps = async ({ params }) => {
+    // const res = await fetch(`${server}/api/projects/${context.params.id}`)
+    // const project = await res.json()
+
+    const project = projects.find(project => project.id === params.id)
 
     return {
         props: { project },
@@ -56,10 +59,14 @@ export const getStaticProps = async context => {
 
 // 2] PATHS
 export const getStaticPaths = async () => {
-    const res = await fetch(`${server}/api/projects`)
-    const projects = await res.json()
-    const ids = projects.map(a => a.id)
-    const paths = ids.map(id => ({ params: { id: '' + id } }))
+    // const res = await fetch(`${server}/api/projects`)
+    // const projects = await res.json()
+    // const ids = projects.map(a => a.id)
+    // const paths = ids.map(id => ({ params: { id: '' + id } }))
+
+    const paths = projects.map(project => ({
+        params: { id: project.id },
+    }))
 
     return {
         paths,

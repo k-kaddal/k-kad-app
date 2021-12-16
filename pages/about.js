@@ -1,4 +1,5 @@
 import { server } from '../config'
+import artists from '../data/artists.json'
 import React from 'react'
 import { Tag, SubTitle, Title, Paragraph } from '../styles/Fonts.style'
 import { Button, Page } from '../styles/Section.style'
@@ -258,8 +259,8 @@ export default About
 // FETCH DATA
 // // 1] STATIC
 export const getStaticProps = async () => {
-    const resArtists = await fetch(`${server}/api/artists`)
-    const artists = await resArtists.json()
+    // const resArtists = await fetch(`${server}/api/artists`)
+    // const artists = await resArtists.json()
 
     return {
         props: {

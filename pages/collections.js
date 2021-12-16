@@ -1,4 +1,5 @@
 import { server } from '../config'
+import collections from '../data/collections.json'
 import CollectionsList from '../component/Collections/CollectionsList'
 
 export default function Collections({ collections }) {
@@ -12,8 +13,8 @@ export default function Collections({ collections }) {
 // FETCH DATA
 // // 1] STATIC
 export const getStaticProps = async () => {
-    const resCollections = await fetch(`${server}/api/collections`)
-    const collections = await resCollections.json()
+    // const resCollections = await fetch(`${server}/api/collections`)
+    // const collections = await resCollections.json()
 
     return {
         props: {

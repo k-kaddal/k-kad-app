@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { server } from '../../../config'
+import collections from '../../../data/collections.json'
+
 import { Page, About } from '../../../styles/Section.style'
 import ArtworkList from '../../../component/Collections/ArtworkList'
 import { Tag, Title, Paragraph } from '../../../styles/Fonts.style'
@@ -53,9 +55,13 @@ const collection = ({ collection }) => {
 
 // FETCH DATA
 // 1] STATIC
-export const getStaticProps = async context => {
-    const res = await fetch(`${server}/api/collections/${context.params.id}`)
-    const collection = await res.json()
+export const getStaticProps = async ({ params }) => {
+    // const res = await fetch(`${server}/api/collections/${context.params.id}`)
+    // const collection = await res.json()
+
+    const collection = collections.find(
+        collection => collection.id === params.id
+    )
 
     return {
         props: { collection },
@@ -65,10 +71,14 @@ export const getStaticProps = async context => {
 
 // 2] PATHS
 export const getStaticPaths = async () => {
-    const res = await fetch(`${server}/api/collections`)
-    const collections = await res.json()
-    const ids = collections.map(a => a.id)
-    const paths = ids.map(id => ({ params: { id: '' + id } }))
+    // const res = await fetch(`${server}/api/collections`)
+    // const collections = await res.json()
+    // const ids = collections.map(a => a.id)
+    // const paths = ids.map(id => ({ params: { id: '' + id } }))
+
+    const paths = collections.map(collection => ({
+        params: { id: collection.id },
+    }))
 
     return {
         paths,

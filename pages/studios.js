@@ -1,4 +1,5 @@
 import { server } from '../config'
+import studios from '../data/studios.json'
 import React from 'react'
 import { Tag, SubTitle, Title, Paragraph } from '../styles/Fonts.style'
 import { Button, Page } from '../styles/Section.style'
@@ -39,8 +40,8 @@ export default Studio
 // FETCH DATA
 // // 1] STATIC
 export const getStaticProps = async () => {
-    const resStudios = await fetch(`${server}/api/studios`)
-    const studios = await resStudios.json()
+    // const resStudios = await fetch(`${server}/api/studios`)
+    // const studios = await resStudios.json()
 
     return {
         props: {
