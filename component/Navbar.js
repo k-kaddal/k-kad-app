@@ -2,21 +2,8 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { Menu, Nav, Logo, MenuLink, Hamburger } from '../styles/Nav.style'
 import styled from 'styled-components'
-import { artists } from '../data/artists'
-import {
-    FaGithub,
-    FaDiscord,
-    FaEnvelope,
-    FaFacebook,
-    FaYoutube,
-    FaInstagram,
-    FaTwitter,
-    FaLinkedin,
-    FaVimeoV,
-} from 'react-icons/fa'
 
 const Navbar = () => {
-    const artist = artists[0]
     const [isOpen, setIsOpen] = useState(false)
 
     return (

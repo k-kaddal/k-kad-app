@@ -30,8 +30,15 @@ const About = ({ artists }) => {
     const performances = artist.events.filter(event =>
         event.tags.includes('performance')
     )
-    const conferences = artist.events.filter(event =>
-        event.tags.includes('conference')
+    const conferences = artist.events.filter(
+        event =>
+            event.tags.includes('conference') ||
+            event.tags.includes('jury') ||
+            event.tags.includes('talk')
+    )
+    const fellowships = artist.events.filter(
+        event =>
+            event.tags.includes('fellowship') || event.tags.includes('grant')
     )
     const press = artist.press
 
@@ -117,9 +124,39 @@ const About = ({ artists }) => {
                             )
                         })}
                     </Section>
+                    <Section id="fellowships">
+                        <SubTitle color={theme.colors.accent}>
+                            | GRANTS & FELLOWSHIPS
+                        </SubTitle>
+                        {fellowships.map((event, key) => {
+                            return (
+                                <div
+                                    key={key}
+                                    style={{
+                                        display: 'flex',
+                                        flexDirection: 'row',
+                                    }}
+                                >
+                                    {' '}
+                                    <Tag
+                                        fontWeight="100"
+                                        color={theme.colors.accent}
+                                    >
+                                        | {event.year} &nbsp;
+                                    </Tag>
+                                    <Tag key={key} fontWeight="100">
+                                        {event.venue}, &nbsp;
+                                    </Tag>
+                                    <Tag key={key} fontWeight="100">
+                                        {event.country} &nbsp;
+                                    </Tag>
+                                </div>
+                            )
+                        })}
+                    </Section>
                     <Section id="conferences">
                         <SubTitle color={theme.colors.accent}>
-                            | CONFERENCES & TALKS
+                            | CONFERENCES & JURY & TALKS
                         </SubTitle>
                         {conferences.map((event, key) => {
                             return (
