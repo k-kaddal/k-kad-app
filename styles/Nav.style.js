@@ -12,7 +12,7 @@ export const Nav = styled.nav`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    margin: 1rem;
     z-index: 1;
     @media (max-width: 768px) {
         position: relative;
@@ -25,8 +25,10 @@ export const Menu = styled.div`
     margin: 0;
     padding: 0;
     width: 100%;
-    text-align: left;
-    border-left: thin solid ${({ theme }) => theme.colors.accent_soft};
+    text-align: center;
+    border: thin solid ${({ theme }) => theme.colors.accent_soft};
+    background-color: ${({ theme }) => theme.colors.major};
+    opacity: 85%;
 
     &:hover {
         box-shadow: 0px 0px 7px 0.5px ${({ theme }) => theme.colors.minor};
@@ -41,7 +43,6 @@ export const Menu = styled.div`
         border-bottom: thin solid
             ${({ isOpen, theme }) =>
                 isOpen ? theme.colors.accent_soft : 'none'};
-        border-left: none;
     }
 `
 
@@ -50,7 +51,7 @@ export const MenuLink = styled.li`
         display: block;
         color: ${({ theme }) => theme.colors.minor};
         padding: 0.5rem 0.9rem;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         text-decoration: none;
     }
     & a:hover {

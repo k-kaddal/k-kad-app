@@ -1,21 +1,26 @@
 import { server } from '../config'
-// import ProjectsList from '../component/Projects/ProjectsList'
 import { Page } from '../styles/Section.style'
+import styled from 'styled-components'
 
-export default function Home({ projects }) {
-    return <Page>{/* <ProjectsList projects={projects} /> */}</Page>
+export default function Home() {
+    return (
+        <Page>
+            <Video autoPlay muted loop>
+                <source src="/videos/start.mp4" type="video/mp4" />
+            </Video>
+        </Page>
+    )
 }
 
-// // FETCH DATA
-// // // 1] STATIC
-// export const getStaticProps = async () => {
-//     const resProjects = await fetch(`${server}/api/projects`)
-//     const projects = await resProjects.json()
+const Video = styled.video`
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
 
-//     return {
-//         props: {
-//             projects,
-//         },
-//         // unstable_revalidate: 1,
-//     }
-// }
+    @media (max-width: 768px) {
+    }
+`
