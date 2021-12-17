@@ -51,7 +51,7 @@ export const MenuLink = styled.li`
         display: block;
         color: ${({ theme }) => theme.colors.minor};
         padding: 0.5rem 0.9rem;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         text-decoration: none;
     }
     & a:hover {
