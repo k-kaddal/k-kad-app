@@ -7,7 +7,7 @@ import styled from 'styled-components'
 
 const ProjectItem = ({ project }) => {
     const basePath = '/images'
-    const image = project.gallery[0]
+    const image = project.images[0]
 
     const [isShown, setIsShown] = useState(false)
 

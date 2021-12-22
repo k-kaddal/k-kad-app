@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 
 export const Page = styled.div`
-    /* display: flex;
-    flex-direction: column; */
+    /* display: flex; */
+    /* flex-direction: column; */
     padding: 1rem;
+    margin: 0;
     width: 100%;
+    height: auto;
     /* border: thin solid red; */
 `
 
@@ -24,8 +26,7 @@ export const Grid = styled.div`
 `
 
 export const About = styled.div`
-    margin: 1rem;
-    padding: 1rem 2rem;
+    bottom: 0;
     border: thin solid ${({ theme }) => theme.colors.accent_soft};
     box-shadow: 0px 0px 1px 0.5px ${({ theme }) => theme.colors.minor};
 

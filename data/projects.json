@@ -1,5 +1,25 @@
 [
     {
+        "id": "0",
+        "title": "The Last Abode",
+        "year": 2021,
+        "tags": [
+            "installation",
+            "ai"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien enim, facilisis non commodo in, vehicula nec est. Quisque at ante id justo aliquet euismod. Donec odio lorem, mattis in aliquam ac, aliquet quis odio. Pellentesque tempor tellus vitae orci convallis, at ornare diam varius. Curabitur volutpat enim dui, eu consequat justo tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Curabitur in vestibulum arcu, nec laoreet risus. In feugiat felis at eleifend lacinia. Etiam nunc orci, vulputate ut nibh ac, dictum maximus purus. Fusce et vestibulum enim. Nunc laoreet posuere mauris, vitae placerat lectus ultricies sit amet. Nulla eget tristique tellus. Duis quis blandit velit. Mauris tristique et magna quis porta. Quisque sit amet aliquam odio. Nullam pellentesque at nulla ac eleifend. Donec non tellus ac enim cursus tincidunt non vel arcu. Aenean sed quam ac tortor faucibus dictum et eu lorem. Nullam posuere purus pulvinar eros rhoncus, a eleifend nisl bibendum. Nulla eleifend massa non elementum ultricies. Vivamus malesuada elit sed consectetur eleifend. Integer gravida vitae est sit amet dictum. Mauris cursus mollis dolor eget posuere. Aenean vitae hendrerit lectus.",
+        "images": [
+            "the_last_abode/the_last_abode_0.jpg",
+            "the_last_abode/the_last_abode_1.jpg",
+            "the_last_abode/the_last_abode_2.jpg",
+            "the_last_abode/the_last_abode_3.jpg",
+            "the_last_abode/the_last_abode_4.jpg",
+            "the_last_abode/the_last_abode_5.jpg"
+        ],
+        "video": "https://vimeo.com/433051398",
+        "commission": []
+    },
+    {
         "id": "1",
         "title": "The Formula of Giving a Heart",
         "year": 2021,
@@ -8,8 +28,11 @@
             "ai"
         ],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien enim, facilisis non commodo in, vehicula nec est. Quisque at ante id justo aliquet euismod. Donec odio lorem, mattis in aliquam ac, aliquet quis odio. Pellentesque tempor tellus vitae orci convallis, at ornare diam varius. Curabitur volutpat enim dui, eu consequat justo tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Curabitur in vestibulum arcu, nec laoreet risus. In feugiat felis at eleifend lacinia. Etiam nunc orci, vulputate ut nibh ac, dictum maximus purus. Fusce et vestibulum enim. Nunc laoreet posuere mauris, vitae placerat lectus ultricies sit amet. Nulla eget tristique tellus. Duis quis blandit velit. Mauris tristique et magna quis porta. Quisque sit amet aliquam odio. Nullam pellentesque at nulla ac eleifend. Donec non tellus ac enim cursus tincidunt non vel arcu. Aenean sed quam ac tortor faucibus dictum et eu lorem. Nullam posuere purus pulvinar eros rhoncus, a eleifend nisl bibendum. Nulla eleifend massa non elementum ultricies. Vivamus malesuada elit sed consectetur eleifend. Integer gravida vitae est sit amet dictum. Mauris cursus mollis dolor eget posuere. Aenean vitae hendrerit lectus.",
-        "gallery": [
-            "the_formula/the_formula_0.jpg"
+        "images": [
+            "the_formula/the_formula_0.jpg",
+            "the_formula/the_formula_1.jpeg",
+            "the_formula/the_formula_2.jpg",
+            "the_formula/the_formula_3.jpg"
         ],
         "video": "https://vimeo.com/433051398",
         "commission": []
@@ -23,13 +46,14 @@
             "sculpture"
         ],
         "description": "Pitting the senses against instincts of fight or flight, To the Nostrils of Time is a spatial installation that contemplates the clashing obsessions with human salvation.\n The work draws on an Ancient Egyptian healing praise ‘Rise like Nefertem to the Nostrils of Ra, and come forth upon the horizon each day’ that unites the self with nature’s solar cycle of daily renewal, like a majestic scent blooming at dawn, fulfilling at noon, and emanating at dusk. The immersive installation recomposes the praise within today’s anguish of human fulfilment within/out ecological balance. \n A pitch-black passage leads to a glowing hermetic vault. Its facets are made out of fickle gold polyester film used both as emergency blankets and outer space light reflectors. In the centre, slanted mirrors pierce out from the soft earthy ground in a stellar pattern, shielding a beam of white light. The metallic-organic sculpture is guarded by two central pillars in Imperial Blue. The insistent cry of a Peregrine Falcon hovers across a four-channel field recording. \n The volume is suspended in cyclical stillness, inviting visitors to chase fleeting reflections across mirrored infinity. Sensorial textures interlock the material and incorporeal, organic and synthetic, temperance and flow, void and amplitude, and permanence and permutation.",
-        "gallery": [
+        "images": [
             "to_the_nostrils_of_time/to_the_nostrils_of_time_0.jpeg",
             "to_the_nostrils_of_time/to_the_nostrils_of_time_1.jpeg",
             "to_the_nostrils_of_time/to_the_nostrils_of_time_2.jpeg",
             "to_the_nostrils_of_time/to_the_nostrils_of_time_3.jpeg",
             "to_the_nostrils_of_time/to_the_nostrils_of_time_4.jpeg",
-            "to_the_nostrils_of_time/to_the_nostrils_of_time_5.jpeg"
+            "to_the_nostrils_of_time/to_the_nostrils_of_time_5.jpeg",
+            "to_the_nostrils_of_time/to_the_nostrils_of_time_6.jpeg"
         ],
         "video": "https://vimeo.com/433051398",
         "commission": []
@@ -43,7 +67,7 @@
             "A/V"
         ],
         "description": "Delving across four millennia into the depths of Egypt, ABJD explores the genesis of the Alphabet, the obscure technology that transformed human communication. \n The exhibition is a sonic and visual excavation of the Proto-Sinaitic Scripts that date back to c. 1800 BCE. These Alphabetic inscriptions originated in Wadi el-Hõl, a strategic military and trade route in the Western Desert. They matured in Serabit el-Khadim, a rich mountainous site in the Southwest of the Sinai Peninsula where Egyptians from the Delta and Canaanites lived and mined Turquoise gemstones. \n Mining and trade generated communicative labour that broke down speech into single consonant sounds with corresponding letters. The first sound-letters were Aleph and Bet, symbolising an Ox and a House, and shortened as A and B. By turning few sounds into a palette for assembling words, the Alpha-Bet popularised writing, storage and transportation of human thought. \n The exhibition revives this linguistic invention with a multimedia installation comprising moving image, sculpture, and sound. Works daw on the vast scenery of the Turquoise mines and the Western Desert. The combined works celebrate an age-old technology that birthed the ABJD-based phonetic linguistic systems including Phoenician, Aramaic, Hebrew, Arabic, Greek, Latin and their contemporary off shoots used across the world today.",
-        "gallery": [
+        "images": [
             "abjd/abjd_0.jpeg",
             "abjd/abjd_1.jpeg",
             "abjd/abjd_2.jpeg",
@@ -69,7 +93,7 @@
             "scultpture"
         ],
         "description": "Boundaries of a Multiverse explores how human perception contends with the profound technological transformations in physical and social existence. \n Drawing on the laws of geometry, optics, and acoustics, the sound sculpture considers the inverse relation between fraction and whole. As time, space, and information accelerate, expand and diversify into multiple realms, the physical and inner contours of perception shrink into relativity. \n Absorbing the exhibition space, the sculptural objects thrive on the specificity of their mediums. Mirrored cubes align with metal rod-cells in punctual symmetry. Visual perception is multiplied through infinite reflections and refractions and into boundless depths of relativity. \n Sound reveals itself as elusive and pervasive. From the mirror cubes, 2000 meters of black and red audio-wire extend in an imposing flurry. In the central mirrored cell,one speaker is locked in, unplugged. Sine waves from a 12-channel installation invade the space. The ensemble creates a multi-dimensional volume where angular vision wrestles with the sound’s irreducible penetrability.",
-        "gallery": [
+        "images": [
             "boundaries_of_multiverse/boundaries_of_multiverse_0.jpeg",
             "boundaries_of_multiverse/boundaries_of_multiverse_1.jpeg",
             "boundaries_of_multiverse/boundaries_of_multiverse_2.jpeg",
@@ -90,7 +114,7 @@
             "performance"
         ],
         "description": "",
-        "gallery": [
+        "images": [
             "rapturous_inspirations/rapturous_inspirations_0.jpeg",
             "rapturous_inspirations/rapturous_inspirations_1.jpeg",
             "rapturous_inspirations/rapturous_inspirations_2.jpeg",
@@ -110,7 +134,7 @@
             "performance"
         ],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien enim, facilisis non commodo in, vehicula nec est. Quisque at ante id justo aliquet euismod. Donec odio lorem, mattis in aliquam ac, aliquet quis odio. Pellentesque tempor tellus vitae orci convallis, at ornare diam varius. Curabitur volutpat enim dui, eu consequat justo tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Curabitur in vestibulum arcu, nec laoreet risus. In feugiat felis at eleifend lacinia. Etiam nunc orci, vulputate ut nibh ac, dictum maximus purus. Fusce et vestibulum enim. Nunc laoreet posuere mauris, vitae placerat lectus ultricies sit amet. Nulla eget tristique tellus. Duis quis blandit velit. Mauris tristique et magna quis porta. Quisque sit amet aliquam odio. Nullam pellentesque at nulla ac eleifend. Donec non tellus ac enim cursus tincidunt non vel arcu. Aenean sed quam ac tortor faucibus dictum et eu lorem. Nullam posuere purus pulvinar eros rhoncus, a eleifend nisl bibendum. Nulla eleifend massa non elementum ultricies. Vivamus malesuada elit sed consectetur eleifend. Integer gravida vitae est sit amet dictum. Mauris cursus mollis dolor eget posuere. Aenean vitae hendrerit lectus.",
-        "gallery": [
+        "images": [
             "essence_of_disappearance/essence_of_disappearance_0.jpeg",
             "essence_of_disappearance/essence_of_disappearance_1.jpeg"
         ],
@@ -126,7 +150,7 @@
             "performance"
         ],
         "description": "The bird awakened in bewilderment, bathing the night with sorrow, Shining with the blink of dawn, Offering tunes to the morning sky! \n In violent combats, survival instinct could swallow our bodies in dark bunkers. However, sounds of weaponry penetrate the ground to dominate ears and dreams.  In this claustrophobic setting, souls crave to be embraced by the sky. From somber bunker to bright sky, the surreal experience scars memories, but expands sensational awareness beyond any political belongings and national identities. The Sky is High, But! is an audio.visual performance that spots on the existential transition from trauma to post-trauma of “the” political victim. The composition is illustrated by recordings of weaponry sounds and birdsongs, forming three chapters on a transformative story of a Bird.",
-        "gallery": [
+        "images": [
             "sky_is_high/sky_is_high_0.jpeg",
             "sky_is_high/sky_is_high_1.jpeg",
             "sky_is_high/sky_is_high_2.jpeg",
@@ -146,7 +170,7 @@
             "performance"
         ],
         "description": "According to the American police radio scanner codes, number’03’ is an instruction code to switch on lights and sirens in police vehicles.Through an audio.visual piece, the performance implicitly scopes the ecology offear, drawing the notion of ‘alert’ and ‘alarm’. Using the sonic qualities ofpolice sirens, generated numbers, red/blue police colours, audio and visual noises. \n C0de.03 invites to a state of attentive and expandedlistening to ‘alert’ and ‘alarm’.",
-        "gallery": [
+        "images": [
             "code03/code03_0.jpeg",
             "code03/code03_1.jpeg",
             "code03/code03_2.jpeg",
@@ -165,7 +189,7 @@
             "performance"
         ],
         "description": "In socio-political militant environments, listening becomes an involuntary practice. Such experiences differ from one person to another, yet a shared collective sonic memory is also developed. Questioning the conceptual bonds between the sound of politics and the politics of sounds, this research strives to investigate sonic warfare from the perspective of the listener in relation to the sonological analysis of such sonic events. How does the exposure of the ears to the Belliphonic sonic spectrum effect the body and its memory? \n C0de.20 is a multipartite project that including performance and installation. It explores different states of listening within the ecology of war and weaponry political conflicts, and investigating the traumatic physiological and psychological impacts of Belliphonic sounds.‍",
-        "gallery": [
+        "images": [
             "code20/code20_0.jpeg",
             "code20/code20_1.jpeg",
             "code20/code20_2.jpeg",
@@ -183,7 +207,7 @@
             "performance"
         ],
         "description": "Driven by the social and the political conflictof the Egyptian revolution, TrappedSounds is a 30mins multimedia performance, thatdraws a notion of social anxiety in contrast with inner balance. Theculminating social behaviour in such transformative event, has inevitably ledto an impact on human individuality. The intrinsic alienation of the individualfrom his inner self has not only developed into social isolation but into otherpsychological traumas. ",
-        "gallery": [
+        "images": [
             "trapped_sounds/trapped_sounds_0.jpeg",
             "trapped_sounds/trapped_sounds_1.jpeg",
             "trapped_sounds/trapped_sounds_2.jpeg",
@@ -203,7 +227,7 @@
             "photography"
         ],
         "description": "Photography series of fungi mycelium and bacterial colony. \n Inkjet print on high-quality fine art paper, wooden-framed with plexiglass \n Dimensions: 56 x 75",
-        "gallery": [
+        "images": [
             "fungalblooms/fungalblooms_0.jpeg",
             "fungalblooms/fungalblooms_1.jpeg",
             "fungalblooms/fungalblooms_2.jpeg",
@@ -221,7 +245,7 @@
             "generative"
         ],
         "description": "Series of generative work, based on algorithmic composition. \n Inkjet print on high-quality fine art paper, wooden-framed with plexiglass \n Variable dimensions",
-        "gallery": [
+        "images": [
             "holesome/holesome_0.jpeg",
             "holesome/holesome_1.jpeg",
             "holesome/holesome_2.jpeg",
@@ -241,7 +265,7 @@
             "mixed"
         ],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien enim, facilisis non commodo in, vehicula nec est. Quisque at ante id justo aliquet euismod. Donec odio lorem, mattis in aliquam ac, aliquet quis odio. Pellentesque tempor tellus vitae orci convallis, at ornare diam varius. Curabitur volutpat enim dui, eu consequat justo tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Curabitur in vestibulum arcu, nec laoreet risus. In feugiat felis at eleifend lacinia. Etiam nunc orci, vulputate ut nibh ac, dictum maximus purus. Fusce et vestibulum enim. Nunc laoreet posuere mauris, vitae placerat lectus ultricies sit amet. Nulla eget tristique tellus. Duis quis blandit velit. Mauris tristique et magna quis porta. Quisque sit amet aliquam odio. Nullam pellentesque at nulla ac eleifend. Donec non tellus ac enim cursus tincidunt non vel arcu. Aenean sed quam ac tortor faucibus dictum et eu lorem. Nullam posuere purus pulvinar eros rhoncus, a eleifend nisl bibendum. Nulla eleifend massa non elementum ultricies. Vivamus malesuada elit sed consectetur eleifend. Integer gravida vitae est sit amet dictum. Mauris cursus mollis dolor eget posuere. Aenean vitae hendrerit lectus.",
-        "gallery": [
+        "images": [
             "rise_like_nefertem/rise_like_nefertem_0.jpeg"
         ],
         "video": "https://vimeo.com/433051398",
@@ -256,7 +280,7 @@
             "photography"
         ],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sapien enim, facilisis non commodo in, vehicula nec est. Quisque at ante id justo aliquet euismod. Donec odio lorem, mattis in aliquam ac, aliquet quis odio. Pellentesque tempor tellus vitae orci convallis, at ornare diam varius. Curabitur volutpat enim dui, eu consequat justo tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n Curabitur in vestibulum arcu, nec laoreet risus. In feugiat felis at eleifend lacinia. Etiam nunc orci, vulputate ut nibh ac, dictum maximus purus. Fusce et vestibulum enim. Nunc laoreet posuere mauris, vitae placerat lectus ultricies sit amet. Nulla eget tristique tellus. Duis quis blandit velit. Mauris tristique et magna quis porta. Quisque sit amet aliquam odio. Nullam pellentesque at nulla ac eleifend. Donec non tellus ac enim cursus tincidunt non vel arcu. Aenean sed quam ac tortor faucibus dictum et eu lorem. Nullam posuere purus pulvinar eros rhoncus, a eleifend nisl bibendum. Nulla eleifend massa non elementum ultricies. Vivamus malesuada elit sed consectetur eleifend. Integer gravida vitae est sit amet dictum. Mauris cursus mollis dolor eget posuere. Aenean vitae hendrerit lectus.",
-        "gallery": [
+        "images": [
             "ka/ka_0.jpeg"
         ],
         "video": "https://vimeo.com/433051398",
@@ -271,7 +295,7 @@
             "publication"
         ],
         "description": "Released on CD & digital streaming/download. \n Pages: 64 \n Size: 210 X 250mm \n Binding: PUR bind \n Language: English‍‍ \n Author/text by: Nesrine Mansour \n Composed and programmed by: Khaled Kaddal \n Field recording by: The Cornell lab of Ornithology \n Design and Production by: Heru Studio \n Supported by Mophradat \n © 2019 Khaled Kaddal",
-        "gallery": [
+        "images": [
             "sovereignty/sovereignty_0.jpeg"
         ],
         "video": "https://vimeo.com/433051398",
@@ -286,7 +310,7 @@
             "landscape"
         ],
         "description": "Photography of Installed turquoise sculpture at the Western Desert of Egypt \n Inkjet print on high-quality fine art paper, wooden-framed with plexiglass \n Dimensions: 56 x 100",
-        "gallery": [
+        "images": [
             "abjd/abjd_0.jpeg"
         ],
         "commission": []
@@ -300,8 +324,10 @@
             "installation"
         ],
         "description": "SAWTYAT is a sonic intervention, installed at the waterfront of Alexandria, and the coastal city Damietta in Egypt. The sound installation is composed of 28 self-built wind chimes, bowed-violin and hanged guitar, tuned in harmonic series to be played by the breeze of wind. The display interacts with the pedestrian, inviting listening to the surrounding soundscape.",
-        "gallery": [
-            "rise_like_nefertem/rise_like_nefertem_0.jpeg"
+        "images": [
+            "sawtyat/sawtyat_0.jpeg",
+            "sawtyat/sawtyat_1.jpeg",
+            "sawtyat/sawtyat_2.jpeg"
         ],
         "commission": []
     },
@@ -313,8 +339,12 @@
             "a/v"
         ],
         "description": "Dry Friction is a multichannel video installation, that revisits Microphone as a political apparatus, contemplating on its contribution in alternating social structures. \n Since its nuance birth, the technology adopted symbolic roles in validating authoritative discourse. The rational functionality of the technology is to translate mechanical sonic waves into electrical energy. Along this physical process, the instrument possessed the power to amplify chosen sonic frequencies over others. It also has the faculty to displace sound and confiscate its original qualities. \n The installation displays a poetic narrative of justice, dragging the microphone to an act ‘act of execution’. The work forcefully reverses the authoritarian power of the instrument, equalises competing frequencies into dense layer of Noise.",
-        "gallery": [
-            "rise_like_nefertem/rise_like_nefertem_0.jpeg"
+        "images": [
+            "dry_friction/dry_friction_0.jpeg",
+            "dry_friction/dry_friction_1.jpeg",
+            "dry_friction/dry_friction_2.jpeg",
+            "dry_friction/dry_friction_3.jpeg",
+            "dry_friction/dry_friction_4.jpeg"
         ],
         "commission": []
     }
