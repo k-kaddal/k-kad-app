@@ -5,9 +5,9 @@ import styled from 'styled-components'
 export default function Home() {
     return (
         <Page>
-            {/* <Video autoPlay muted loop>
+            <Video autoPlay muted loop>
                 <source src="/videos/start.mp4" type="video/mp4" />
-            </Video> */}
+            </Video>
         </Page>
     )
 }
